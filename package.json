@@ -1,0 +1,13 @@
+{
+  "name": "node-admin",
+  "version": "0.0.1",
+  "description": "Prototype to test Node.js with Adminbro",
+  "main": "index.js",
+  "author": "pierluigi-giancola",
+  "license": "MIT",
+  "dependencies": {
+    "admin-bro": "^2.2.8",
+    "admin-bro-expressjs": "^2.0.4",
+    "express": "^4.17.1"
+  }
+}
