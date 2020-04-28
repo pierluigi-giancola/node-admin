@@ -1,6 +1,6 @@
 {
   "name": "node-admin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Prototype to test Node.js with Adminbro",
   "main": "index.js",
   "author": "pierluigi-giancola",
