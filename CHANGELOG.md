@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.6] - 2020-04-29
+Add [commit-lint](https://github.com/conventional-changelog/commitlint#config).
+Set up with husky using [this guide](https://dev.to/omarfesal/how-to-validate-commit-message-convention-using-commitlint-and-husky-aaa).
+
 ## [0.0.5] - 2020-04-29
 Add [lint-staged](https://www.npmjs.com/package/lint-staged) and [husky](https://www.npmjs.com/package/husky) to run eslint on pre-commit.
 NOTE: I just noticed that lint-staged has a [shortcut](https://www.npmjs.com/package/lint-staged#installation-and-setup) to install almost all the tools I previously installed.
@@ -58,7 +62,8 @@ and the server start
 [Refer to official docs](https://yarnpkg.com/advanced/editor-sdks#vscode)
 
 
-[Unreleased]: https://github.com/pierluigi-giancola/node-admin/compare/v0.0.5...HEAD
+[Unreleased]: https://github.com/pierluigi-giancola/node-admin/compare/v0.0.6...HEAD
+[0.0.6]: https://github.com/pierluigi-giancola/node-admin/compare/v0.0.5...v0.0.6
 [0.0.5]: https://github.com/pierluigi-giancola/node-admin/compare/v0.0.4...v0.0.5
 [0.0.4]: https://github.com/pierluigi-giancola/node-admin/compare/v0.0.3...v0.0.4
 [0.0.3]: https://github.com/pierluigi-giancola/node-admin/compare/v0.0.2...v0.0.3
