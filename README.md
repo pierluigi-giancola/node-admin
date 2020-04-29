@@ -1,4 +1,4 @@
-<!-- [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) -->
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 # Quick start Node.js Enterprise
 
@@ -21,4 +21,4 @@ This is a Quickstart project that wraps library for linting, testing, formatting
 
 ### Enforce conventional commits:
 - [commitlint](https://github.com/conventional-changelog/commitlint): ensure that commit message follow conventional rules
-<!-- - [commitizen](https://github.com/commitizen/cz-cli): help write conventional commits -->
+- [commitizen](https://github.com/commitizen/cz-cli): help write conventional commits

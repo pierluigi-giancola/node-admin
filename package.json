@@ -11,16 +11,23 @@
     "docker-postgres": "docker pull postgres && docker run -p 5432:5432 postgres --name postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres",
     "postgres": "docker restart postgres",
     "dev:express": "tsc && node dist/index.js",
-    "test": "jest"
+    "test": "jest",
+    "git-cz": "git-cz"
   },
   "husky": {
     "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git-cz --hook || true",
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
     "*.ts": "eslint --cache --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "dependencies": {
     "@yarnpkg/pnpify": "^2.0.0-rc.21",
@@ -36,6 +43,8 @@
     "@types/node": "^13.13.4",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
+    "commitizen": "^4.0.4",
+    "cz-conventional-changelog": "^3.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
