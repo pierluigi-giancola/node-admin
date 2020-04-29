@@ -13,6 +13,14 @@
     "dev:express": "tsc && node dist/index.js",
     "test": "jest"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix"
+  },
   "dependencies": {
     "@yarnpkg/pnpify": "^2.0.0-rc.21",
     "admin-bro": "^2.2.8",
@@ -28,7 +36,9 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
+    "husky": ">=4",
     "jest": "^25.5.0",
+    "lint-staged": ">=10",
     "prettier": "^2.0.5",
     "ts-jest": "^25.4.0",
     "typescript": "^3.8.3"
