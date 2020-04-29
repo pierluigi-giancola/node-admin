@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.3] - 2020-04-28
+### ESLint && Prettier
+[from here](https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb)
+
+
 ## [0.0.2] - 2020-04-28
 ### Typescript
 after
@@ -33,6 +38,6 @@ and the server start
 [Refer to official docs](https://yarnpkg.com/advanced/editor-sdks#vscode)
 
 
-[Unreleased]: https://github.com/pierluigi-giancola/node-admin/compare/v0.0.2...HEAD
-
+[Unreleased]: https://github.com/pierluigi-giancola/node-admin/compare/v0.0.3...HEAD
+[0.0.3]: https://github.com/pierluigi-giancola/node-admin/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/pierluigi-giancola/node-admin/releases/tag/v0.0.2
