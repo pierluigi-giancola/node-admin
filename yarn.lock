@@ -4418,15 +4418,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv-safe@npm:^8.2.0":
-  version: 8.2.0
-  resolution: "dotenv-safe@npm:8.2.0"
-  dependencies:
-    dotenv: ^8.2.0
-  checksum: 2/8525ceed5a8ae4a4b9264080a3ad1550cb4c5d8d5990b4772fd62a6d245c01a01f77a540bab4fb16ae0513d9ea804cbaa6d19acb370b5bc68f2d103813c2eb2e
-  languageName: node
-  linkType: hard
-
 "dotenv@npm:^8.2.0":
   version: 8.2.0
   resolution: "dotenv@npm:8.2.0"
@@ -7897,7 +7888,7 @@ __metadata:
     admin-bro-expressjs: ^2.0.4
     commitizen: ^4.0.4
     cz-conventional-changelog: ^3.1.0
-    dotenv-safe: ^8.2.0
+    dotenv: ^8.2.0
     eslint: ^6.8.0
     eslint-config-prettier: ^6.11.0
     eslint-plugin-prettier: ^3.1.3

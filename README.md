@@ -9,7 +9,7 @@ This is a Quickstart project that wraps library for linting, testing, formatting
 - [ts-node](https://www.npmjs.com/package/ts-node): run ts without transpile them, used for speed
 
 ### Enviroment Variable config:
-- [dotenv-safe](https://www.npmjs.com/package/dotenv-safe): a npm package build on top of dotenv, let you share a _.env.example_ with just keys and check when loading your _.env_ if all keys from _.env.example_ are present in _.env_
+- [dotenv](https://www.npmjs.com/package/dotenv)
 
 ### Linting:
 - [Eslint](https://eslint.org/)
