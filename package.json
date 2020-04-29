@@ -6,11 +6,12 @@
   "author": "pierluigi-giancola",
   "license": "MIT",
   "scripts": {
+    "start": "tsc && NODE_ENV=development node dist/index.js",
+    "nodemon": "NODE_ENV=development && nodemon",
     "tsc": "tsc",
     "eslint": "eslint src/**/*.ts --fix",
     "docker-postgres": "docker pull postgres && docker run -p 5432:5432 postgres --name postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres",
     "postgres": "docker restart postgres",
-    "dev:express": "tsc && NODE_ENV=development node dist/index.js",
     "test": "jest",
     "git-cz": "git-cz"
   },
@@ -28,6 +29,19 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      ".yarn"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "ts-node --transpile-only src/index.ts",
+    "ext": "ts"
   },
   "dependencies": {
     "@yarnpkg/pnpify": "^2.0.0-rc.21",
@@ -53,6 +67,7 @@
     "husky": ">=4",
     "jest": "^25.5.0",
     "lint-staged": ">=10",
+    "nodemon": "^2.0.3",
     "prettier": "^2.0.5",
     "ts-jest": "^25.4.0",
     "ts-node": "^8.9.1",
