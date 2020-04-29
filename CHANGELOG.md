@@ -6,6 +6,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.4] - 2020-04-29
+### Jest
+install jest and his types, plus ts-jest.
+```sh
+yarn add -D jest @types/jest ts-jest
+```
+Add script _"test":"jest"_ in package.json then
+```sh
+yarn test --init
+```
+in the generated _jest.config.js_ file add 
+```js
+preset: 'ts-jest'
+```
+Add a dumb test to see if it's working.
+
 ## [0.0.3] - 2020-04-28
 ### ESLint && Prettier
 [from here](https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb)
@@ -38,6 +54,7 @@ and the server start
 [Refer to official docs](https://yarnpkg.com/advanced/editor-sdks#vscode)
 
 
-[Unreleased]: https://github.com/pierluigi-giancola/node-admin/compare/v0.0.3...HEAD
+[Unreleased]: https://github.com/pierluigi-giancola/node-admin/compare/v0.0.4...HEAD
+[0.0.4]: https://github.com/pierluigi-giancola/node-admin/compare/v0.0.3...v0.0.4
 [0.0.3]: https://github.com/pierluigi-giancola/node-admin/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/pierluigi-giancola/node-admin/releases/tag/v0.0.2
