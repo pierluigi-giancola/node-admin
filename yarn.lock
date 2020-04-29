@@ -2012,6 +2012,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/dotenv-safe@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@types/dotenv-safe@npm:8.1.0"
+  dependencies:
+    dotenv: ^8.2.0
+  checksum: 2/6c14a6a0c83a6e3c5c1facca2fc5c4de53bd92d8172189a66aa224ba621ccafa7d39b09ce33974767e5ff74955a7a2ac4f076538867937f5c3c1e7eab72cda07
+  languageName: node
+  linkType: hard
+
 "@types/emscripten@npm:^1.38.0":
   version: 1.39.3
   resolution: "@types/emscripten@npm:1.39.3"
@@ -2724,6 +2733,13 @@ __metadata:
     delegates: ^1.0.0
     readable-stream: ^2.0.6
   checksum: 2/2d6fdb0ddde9b8cb120b6851b42c75f6b6db78b540b579a00d144ad38cb9e1bdf1248e5454049fcf5b47ef61d1a6f2ea433a8e38984158afd441bc1e0db7a625
+  languageName: node
+  linkType: hard
+
+"arg@npm:^4.1.0":
+  version: 4.1.3
+  resolution: "arg@npm:4.1.3"
+  checksum: 2/81b3b40b1529c4fbf75b12f7c3e6fb2dcce9e78072063babc169de9b4f40777788f3d2b04380f659ef676a756e03ccfbfe78adf4477353bda906295fa69dab89
   languageName: node
   linkType: hard
 
@@ -4248,6 +4264,22 @@ __metadata:
   dependencies:
     is-obj: ^1.0.0
   checksum: 2/4f10126783ca09bcc5d467cc5a8568e24ee588a76c5d5419b3cba7ab973f0dfb91902846601c1917492c3135813d3db54a84ba08c35ea35ccebd5082e6d733ac
+  languageName: node
+  linkType: hard
+
+"dotenv-safe@npm:^8.2.0":
+  version: 8.2.0
+  resolution: "dotenv-safe@npm:8.2.0"
+  dependencies:
+    dotenv: ^8.2.0
+  checksum: 2/8525ceed5a8ae4a4b9264080a3ad1550cb4c5d8d5990b4772fd62a6d245c01a01f77a540bab4fb16ae0513d9ea804cbaa6d19acb370b5bc68f2d103813c2eb2e
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^8.2.0":
+  version: 8.2.0
+  resolution: "dotenv@npm:8.2.0"
+  checksum: 2/16cb89cbd7b98b053899b8aba8c5044c8fb61a2db8a81fe70360b75035fce5fed53bd7a34d772be717d0880c0321122a4c09423f518025e1b52d96791521b1a7
   languageName: node
   linkType: hard
 
@@ -7186,7 +7218,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"make-error@npm:1.x":
+"make-error@npm:1.x, make-error@npm:^1.1.1":
   version: 1.3.6
   resolution: "make-error@npm:1.3.6"
   checksum: 2/2c780bab8409b865e8ee86697c599a2bf2765ec64d21eb67ccda27050e039f983feacad05a0d43aba3c966ea03d305d2612e94fec45474bcbc61181f57c5bb88
@@ -7561,6 +7593,7 @@ fsevents@^2.1.2:
   dependencies:
     "@commitlint/cli": ^8.3.5
     "@commitlint/config-conventional": ^8.3.4
+    "@types/dotenv-safe": ^8.1.0
     "@types/express": ^4.17.6
     "@types/jest": ^25.2.1
     "@types/node": ^13.13.4
@@ -7571,6 +7604,7 @@ fsevents@^2.1.2:
     admin-bro-expressjs: ^2.0.4
     commitizen: ^4.0.4
     cz-conventional-changelog: ^3.1.0
+    dotenv-safe: ^8.2.0
     eslint: ^6.8.0
     eslint-config-prettier: ^6.11.0
     eslint-plugin-prettier: ^3.1.3
@@ -7580,6 +7614,7 @@ fsevents@^2.1.2:
     lint-staged: ">=10"
     prettier: ^2.0.5
     ts-jest: ^25.4.0
+    ts-node: ^8.9.1
     typescript: ^3.8.3
   languageName: unknown
   linkType: soft
@@ -9660,7 +9695,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"source-map-support@npm:^0.5.16, source-map-support@npm:^0.5.6, source-map-support@npm:~0.5.12":
+"source-map-support@npm:^0.5.16, source-map-support@npm:^0.5.17, source-map-support@npm:^0.5.6, source-map-support@npm:~0.5.12":
   version: 0.5.19
   resolution: "source-map-support@npm:0.5.19"
   dependencies:
@@ -10442,6 +10477,26 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
+"ts-node@npm:^8.9.1":
+  version: 8.9.1
+  resolution: "ts-node@npm:8.9.1"
+  dependencies:
+    arg: ^4.1.0
+    diff: ^4.0.1
+    make-error: ^1.1.1
+    source-map-support: ^0.5.17
+    yn: 3.1.1
+  peerDependencies:
+    typescript: ">=2.7"
+  bin:
+    ts-node: dist/bin.js
+    ts-node-script: dist/bin-script.js
+    ts-node-transpile-only: dist/bin-transpile.js
+    ts-script: dist/bin-script-deprecated.js
+  checksum: 2/8b365cd64448b6a7904f910d5d23d25ffc5a89a7dad9cfae9cf6c6cda464b08ecf10601aadc6db04155deecd9b64546745c614c3d4180d1d19ad85fdfb5f14d3
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^1.8.1, tslib@npm:^1.9.0":
   version: 1.11.1
   resolution: "tslib@npm:1.11.1"
@@ -11021,5 +11076,12 @@ typescript@^3.8.3:
     y18n: ^4.0.0
     yargs-parser: ^18.1.1
   checksum: 2/6504a0bb4e6f5933ebaaa52307943a9cdb44da6200cd1ca8794aaa1d18b70f0acd2f49f46630b07bd4d2aa12cb1fe666b186d367c36fa1b4998f7ce8bdc9ffdf
+  languageName: node
+  linkType: hard
+
+"yn@npm:3.1.1":
+  version: 3.1.1
+  resolution: "yn@npm:3.1.1"
+  checksum: 2/bff63b80568d80c711670935427494dde47cdf97e8b04196b140ce0af519c81c5ee857eddad0caa8b422dd65aea0157bbfaacbb1546bebba623f0f383d5d9ae5
   languageName: node
   linkType: hard

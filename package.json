@@ -10,7 +10,7 @@
     "eslint": "eslint src/**/*.ts --fix",
     "docker-postgres": "docker pull postgres && docker run -p 5432:5432 postgres --name postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres",
     "postgres": "docker restart postgres",
-    "dev:express": "tsc && node dist/index.js",
+    "dev:express": "tsc && NODE_ENV=development node dist/index.js",
     "test": "jest",
     "git-cz": "git-cz"
   },
@@ -38,6 +38,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@types/dotenv-safe": "^8.1.0",
     "@types/express": "^4.17.6",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.13.4",
@@ -45,6 +46,7 @@
     "@typescript-eslint/parser": "^2.30.0",
     "commitizen": "^4.0.4",
     "cz-conventional-changelog": "^3.1.0",
+    "dotenv-safe": "^8.2.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
@@ -53,6 +55,7 @@
     "lint-staged": ">=10",
     "prettier": "^2.0.5",
     "ts-jest": "^25.4.0",
+    "ts-node": "^8.9.1",
     "typescript": "^3.8.3"
   }
 }
